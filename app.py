@@ -17,7 +17,7 @@ st.sidebar.write("""
 days = st.sidebar.slider('日数', 1, 50, 20)
 
 st.write(f"""
-### 過去 **{days}日間** のGAFA株価
+### 過去 **{days}日間** のGAFAM株価
 """)
 
 @st.cache
@@ -49,7 +49,8 @@ try:
         'google': 'GOOGL',
         'microsoft': 'MSFT',
         'netflix': 'NFLX',
-        'amazon': 'AMZN'
+        'amazon': 'AMZN',
+        'Tesla': 'TSLA'
     }
     df = get_data(days, tickers)
     companies = st.multiselect(
