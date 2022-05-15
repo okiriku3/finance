@@ -14,7 +14,7 @@ st.sidebar.write("""
 ## 表示日数選択
 """)
 
-days = st.sidebar.slider('日数', 1, 365, 20)
+days = st.sidebar.slider('日数', 1, 1500, 20)
 
 st.write(f"""
 ### 過去 **{days}日間** のGAFAM株価
