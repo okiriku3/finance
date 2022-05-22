@@ -84,5 +84,3 @@ except:
         "おっと！なにかエラーが起きているようです。"
     )
     
-ticker_info = yf.Ticker("9984.T")
-print('ticker_info')
