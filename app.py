@@ -51,7 +51,7 @@ try:
         'netflix': 'NFLX',
         'amazon': 'AMZN',
         'Tesla': 'TSLA'
-        'Softbank(JP)': "9984.T" ,
+        
     }
     df = get_data(days, tickers)
     companies = st.multiselect(
